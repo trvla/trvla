@@ -34,11 +34,17 @@ sub change_socket_state{
 $req->content ($postdata);
    my $state;
    my $resp = $ua->request($req);
-#print Dumper($res->content);
 
     if ($resp->is_success) {
-        print "succes \n";
-        print $resp->decoded_content;
+   
+ if (get_socket_state($ya_token, $socket_id)) {
+    sent_telegram("poweredon",$used_id,$socket_name, "1");
+}
+ else {
+    sent_telegram("Try to poweron mannualy ",$used_id,$socket_name, "1");
+}  
+    
+    
         return 0;
 }
 else {
