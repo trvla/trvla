@@ -12,7 +12,7 @@ my $used_id = "<your_User_id>";
 my $token = "<Telegram_token>";
 
 if (get_socket_state($ya_token, $socket_id)) {
-    sent_telegram("poweredon",$used_id,$socket_name, "1");
+   # sent_telegram("poweredon",$used_id,$socket_name, "1");
 }
  else {
     sent_telegram("powered off \n try to poweron it ",$used_id,$socket_name, "1");
