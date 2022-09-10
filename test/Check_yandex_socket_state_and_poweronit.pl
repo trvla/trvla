@@ -70,6 +70,10 @@ if ($resp->is_success) {
     my $message = $resp->decoded_content;
     #print "Received reply: $message";
     my $text = decode_json($message);
+    if  ($text-> {'state'} == 'offline') {
+     sent_telegram("Device is offline.",$used_id,$socket_name, "2");
+     exit 3;
+    }
     return $text->{'capabilities'}[0]{'state'}{'value'};
 }
 else {
