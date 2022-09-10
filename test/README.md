@@ -1,7 +1,8 @@
-Script get for Yandex socket state, and if it poweredoff, try to poweron in. Needed telegram bot token, Yandex OAuth token with smart home permissions, socket id
+Script get for Yandex socket state, and if it poweredoff, try to poweron in.   <br />
+Needed telegram bot token, Yandex OAuth token with smart home permissions, socket id  <br />
 
-$socket_name - name for telgram messages
-$socket_id - Socket id from Yandex smart home
-$ya_token - token from Yandex OAuth
-$used_id - telegram userid for recieve messages
-$token -  telegram bot token
+$socket_name - name for telgram messages   <br />
+$socket_id - Socket id from Yandex smart home   <br />
+$ya_token - token from Yandex OAuth  <br />
+$used_id - telegram userid for recieve messages  <br />
+$token -  telegram bot token  <br />
