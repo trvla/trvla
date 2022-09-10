@@ -1,4 +1,5 @@
 Script get for Yandex socket state, and if it poweredoff, try to poweron in.   <br />
+If socket is offline it will sent offline message.  <br />
 Needed telegram bot token, Yandex OAuth token with smart home permissions, socket id  <br />
 
 $socket_name - name for telegram messages   <br />
