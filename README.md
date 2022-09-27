@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @trvla
 
-Script get for Yandex socket state, and if it poweredoff, try to poweron in.
+Script get for Yandex socket state, and if it poweredoff, try to poweron it.
 Needed telegram bot token, Yandex OAuth token with smart home permissions, socket id 
 
 <!---
